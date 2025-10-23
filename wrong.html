@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚠️ 주의사항</title>
+  <link rel="stylesheet" href="style.css" />
+<body style="background-color: #f6f6e9;">
+  ...
+</body>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center; /* 전체 중앙 정렬 */
+  }
+
+
+
+
+
+  /* ===== 가로형 카드 (1개씩 3줄) ===== */
+  .horizontal-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .horizontal-cards .card {
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .horizontal-cards .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .horizontal-cards .card h3 {
+    position: relative;
+    margin: 10px 0;
+    padding-top: 15px;
+  }
+
+  .horizontal-cards .card h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #8cc63f;
+  }
+
+  .horizontal-cards .card p {
+    margin: 0 10px 15px;
+  }
+
+  /* ===== 세로형 갤러리 (3개 한 줄) ===== */
+  .vertical-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .vertical-gallery .plant-card {
+    width: calc(33.33% - 20px);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .vertical-gallery .plant-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .vertical-gallery .plant-card h3 {
+    position: relative;
+    margin: 10px 0;
+    padding-top: 15px;
+  }
+
+  .vertical-gallery .plant-card h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #8cc63f;
+  }
+
+  .vertical-gallery .plant-card p {
+    margin: 0 10px 10px;
+  }
+</style>
+</head>
+<body>
+
+     <header>
+    <div class="logo">
+      <img src="logo.png"/>
+      <h1>Monstera</h1>
+    </div>
+    <nav>
+      <ul>
+      <li><a href="index.html" >💚</a></li>
+        <li><a href="monstera.html">🌿 몬스테라 소개</a></li>
+        <li><a href="plants.html">🪴 몬스테라의 종류</a></li>
+        <li><a href="tips.html">🧤 키우는 법</a></li>
+        <li><a href="wrong.html" class="active">⚠️ 주의사항</a></li>
+        <li><a href="interior.html">🪟 인테리어</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- 가로형 카드 영역 -->
+<h1 class="no-line"> <br>⚠️ 문제점</h1>
+<section class="horizontal-cards">
+  <div class="card">
+    <h3>잎이 노래짐</h3>
+    <p>과습이거나 통풍이 부족한 경우가 많습니다.</p>
+  </div>
+  <div class="card">
+    <h3>잎 끝이 마름</h3>
+    <p>습도가 낮거나 물이 부족한 경우입니다.</p>
+  </div>
+  <div class="card">
+    <h3>잎에 구멍이 안 남</h3>
+    <p>빛이 부족하거나 성장 환경이 좋지 않은 경우입니다.</p>
+  </div>
+</section>
+
+<br>
+<br>
+
+<!-- 세로형 갤러리 영역 -->
+<h1 class="no-line">🦠 자주 생기는 병충해</h1>
+<section class="vertical-gallery">
+  <div class="plant-card">
+    <h3>깍지벌레</h3>
+    <p>잎 뒷면이나 줄기 틈새에 하얗고 끈적한 솜뭉치처럼 붙어 있으며, <br>잎이 누렇게 변색되거나 곰팡이가 생길 수 있습니다. </p><br><br>
+    <h4>1차 조치: 이쑤시개나 면봉에 물이나 알코올(소독용 에탄올)을 <br>묻혀 직접 떼어냄. <br><br>
+2차 조치: 감염 심하면 깍지벌레 전용 약제(예: 모사필, 피리플루퀸 등) 분사. <br><br>
+관리 포인트: 통풍 잘 시키고, 식물 잎에 먼지가 쌓이지 않게<br> 주기적으로 닦아줌.</h4>
+  </div>
+  <div class="plant-card">
+   <h3>총채벌레</h3>
+    <p>잎에 작은 노란 점이나 거미줄이 생기고, 건조한 환경에서 잘 번식합니다. </p><br><br>
+    <h4>1차 조치: 감염된 잎은 바로 제거.<br><br>
+2차 조치: 총채벌레 전용 약제<br>(스피노사드, 아바멕틴, 이미다클로프리드 계열) 살포.<br><br>
+3차 조치: 화분 주변에 노란색 끈끈이 트랩 설치해서 성충 유입 차단.<br><br>
+관리 포인트: 새 식물을 들일 때 반드시 격리 후 관찰. <br>총채벌레는 퍼지는 속도가 빠름.</h4>
+  </div>
+  <div class="plant-card">
+   <h3>응애</h3>
+    <p>잎에 작은 점무늬나 줄무늬가 생기고, 심하면 잎이 마르거나 구멍이 생깁니다. </p><br><br>
+    <h4>1차 조치: 젖은 물티슈나 부드러운 천으로 잎 앞뒤를 꼼꼼히 닦아냄.<br><br>
+2차 조치: 미지근한 물로 잎 전체를 샤워시키듯 씻어줌.<br><br>
+3차 조치: 심하면 응애 전용 살충제<br>(아그리마이신, 코니도, 아바멕틴 계열) 사용.<br><br>
+관리 포인트: 응애는 건조한 환경에서 잘 번식하니 <br>습도 높이기(분무 자주 하기) 필수.</h4>
+  </div>
+</section>
+
+</body>
+</html>
+

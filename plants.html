@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🪴 몬스테라의 종류</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 한 줄에 3개씩 */
+    .plant-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .plant-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      width: calc(30% - 20px); 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      min-width: 150px;
+    }
+
+    .plant-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .plant-card h3 {
+      position: relative;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      font-size: 1.3rem;
+    }
+
+    .plant-card h3::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 2px;
+      background-color: #8cc63f;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="로고" />
+    <h1>Monstera</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">💚</a></li>
+        <li><a href="monstera.html">🌿 몬스테라 소개</a></li>
+        <li><a href="plants.html"  class="active">🪴 몬스테라의 종류</a></li>
+        <li><a href="tips.html">🧤 키우는 법</a></li>
+        <li><a href="wrong.html">⚠️ 주의사항</a></li>
+        <li><a href="interior.html">🪟 인테리어</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2 class="page-title">🪴 몬스테라의 종류</h2>
+
+  <div class="plant-gallery">
+    <!-- 1 -->
+    <div class="plant-card">
+        <div style="width:100%; height:350px; overflow:hidden; border-radius:8px;">
+    <img src="monst.jpg"  style="width:100%; height:100%; object-fit:cover;">
+  </div>
+      <h3 class="title" style="padding-top:20px; margin-bottom:15px;">몬스테라 델리시오사</h3>
+      <p style="margin-top:0;">가장 흔하고 크기가 크며 구멍이 깊게 뚫린 잎이 특징입니다.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="plant-card">
+        <div style="width:100%; height:350px; overflow:hidden; border-radius:8px;">
+    <img src="monstob.jpg"  style="width:100%; height:100%; object-fit:cover;">
+  </div>
+      <h3 class="title" style="padding-top:20px; margin-bottom:15px;">몬스테라 오블리카</h3>
+      <p style="margin-top:0;">공기정화 능력이 뛰어나고, 습도와 환경 변화에 강하여 초보자들이 키우기 좋은 식물입니다.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="plant-card">
+        <div style="width:100%; height:350px; overflow:hidden; border-radius:8px;">
+    <img src="monstbr.png"  style="width:100%; height:100%; object-fit:cover;">
+  </div>
+       <h3 class="title" style="padding-top:20px; margin-bottom:15px;">몬스테라 바리에가타</h3>
+      <p style="margin-top:0;">흰색 무늬가 섞인 품종으로 희귀하고 고가입니다.</p>
+    </div>
+
+
+</main>
+
+</body>
+</html>
